@@ -2,14 +2,15 @@ from ultralytics import YOLO
 from roboflow import Roboflow
 
 # Uncomment as necessary:
+
 #----LOCAL MODEL / DATA----#
 '''
 # make sure to add absolute paths here
 # load local model
-MODEL_PATH = # absolute path to .pt model
+MODEL_PATH = '' # absolute path to .pt model
 model = YOLO(MODEL_PATH)
 # load local data
-dataset = # absolute path to data.yaml
+dataset = '' # absolute path to data.yaml
 '''
 
 #----CLOUD MODEL / DATA----#
