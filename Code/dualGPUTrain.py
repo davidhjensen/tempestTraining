@@ -27,7 +27,7 @@ dataset = version.download("yolov8").location + "\\data.yaml"
 
 if __name__ == "__main__":
     results = model.train(data=dataset,
-                          epochs=50,
+                          epochs=100,
                           imgsz=640,
                           patience=10,
                           cache=False,
