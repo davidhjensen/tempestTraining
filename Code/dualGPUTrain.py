@@ -13,7 +13,7 @@ model = YOLO(MODEL_PATH)
 dataset = '' # absolute path to data.yaml
 '''
 
-#----CLOUD MODEL / DATA----#
+#----CLOUD MODEL ----#
 '''
 # load cloud model
 model = YOLO('yolov8m.pt')
