@@ -10,5 +10,5 @@ rf = Roboflow(api_key=API_KEY) # update API key as necessary
 project = rf.workspace(WORKSPACE).project(PROJECT)
 version = project.version(1)
 
-dataset = version.download("yolov8").location + "\\data.yaml
+dataset = version.download("yolov8").location + "\\data.yaml"
 print("Dataset dowloaded to the following directory:\n%s"%dataset)
