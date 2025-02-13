@@ -5,7 +5,7 @@ To download a dataset from Roboflow...
 1. On Roboflow, create a new dataset version
 2. Select `Download Dataset`, choose a format, and select `Show download code`
 3. Copy the provided code snippet, which has necessary values to download the dataset
-4. Open `roboflow_dataset_download.py` and update the `API_KEY`, `WORKSPACE`, and `PROJECT` variables at the top of the file
+4. Open `roboflow_dataset_download.py` and update the `API_KEY`, `WORKSPACE`, `PROJECT`, and `VERSION` variables at the top of the file
 5. Run the script, which should download the dataset into this directory
 
 ## Templates
