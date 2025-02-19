@@ -26,6 +26,6 @@
 
 module load Anaconda3/4.0.0
 
-source activate $HOME/.conda/envs/<env_name>
+source activate $HOME/.conda/envs/YOLOv8
 
-python $HOME/path/to/script.py
+python $HOME/tempestTraining/Code/train.py
