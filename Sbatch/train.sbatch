@@ -10,24 +10,22 @@
 
 #SBATCH --cpus-per-task 2
 
-#SBATCH --gpus-per-task h100:2
+#SBATCH --gpus-per-task h100:4
 
 ## 1000G max for H100
 ## 500GB for Quad A100
 #SBATCH --mem=256G
 
-#SBATCH --time=0-01:00:00
+#SBATCH --time=0-04:00:00
 
-#SBATCH --job-name=job_name
+#SBATCH --job-name=<job_name>
 
 ## %x is the job name and %j and the job number
 #SBATCH --output=%x-%j.out
 #SBATCH --error=%x-%j.err
 
-module load Anaconda3/5.3.0
+module load Anaconda3/4.0.0
 
-# load the environment with roboflow / ultrlytics installed
-source activate $HOME/.conda/envs/robosub_yolov8
+source activate $HOME/.conda/envs/<env_name>
 
-# run the python file corrisponding to the training you want to do
-python $HOME/bmw/i-ETC-2025/Code/train.py
+python $HOME/path/to/script.py
